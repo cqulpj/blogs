@@ -2,7 +2,7 @@
 layout: post
 title:  "写点儿什么-关于游戏-关于war3"
 author: lpj
-categories: [ 杂记, 随笔 ]
+categories: [ 随笔 ]
 image: assets/images/6.jpg
 tags: featured
 ---

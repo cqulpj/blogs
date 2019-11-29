@@ -2,7 +2,7 @@
 layout: post
 title:  "从此最好不相见"
 author: lpj
-categories: [ 杂记, 随笔 ]
+categories: [ 随笔 ]
 image: assets/images/6.jpg
 ---
 

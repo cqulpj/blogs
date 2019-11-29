@@ -2,7 +2,7 @@
 layout: post
 title:  "超过那辆三轮车"
 author: lpj
-categories: [ 杂记, 随笔 ]
+categories: [ 杂记 ]
 image: assets/images/12.jpg
 ---
 
