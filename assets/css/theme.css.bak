@@ -672,6 +672,16 @@ article blockquote {
 	font-style:italic;
 	position:relative;
 }
+article blockquote:before {
+	content:"“";
+	font-family:Georgia;
+	font-size:6rem;
+	margin:-1rem 2rem 0 -3.9rem;
+	position:absolute;
+	opacity:1;
+	float:left;
+	line-height:1;
+}
 article:first-letter {
 	float:left;
 	font-size:5em;
