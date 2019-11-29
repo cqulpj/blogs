@@ -652,13 +652,13 @@ footer {
     margin-top:10px;
 }
 article {
-	font-size:20px;
-	line-height:1.86;
+	font-size:16px;
+	line-height:1.66;
     font-family:Lora;
 }
 .article-headline {
     font-family: Georgia,Times,"Times New Roman",serif;
-    font-size: 3.2rem;
+    font-size: 2.2rem;
     font-weight: 400;
     line-height: 1.15;
     color: #222222;
@@ -675,7 +675,7 @@ article blockquote {
 article blockquote:before {
 	content:"“";
 	font-family:Georgia;
-	font-size:8rem;
+	font-size:6rem;
 	margin:-1rem 2rem 0 -3.9rem;
 	position:absolute;
 	opacity:1;
@@ -692,7 +692,7 @@ article:first-letter {
 article h1,article h2,article h3,article h4,article h5,article h6,article .h1,article .h2,article .h3,article .h4,article .h5,article .h6 {
 	margin-bottom:2rem;
 	margin-top:2rem;
-	font-weight:600;
+	font-weight:500;
 }
 .alertbar {
 	box-shadow:0 -3px 10px 0 rgba(0,0,0,.0785);
