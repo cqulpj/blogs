@@ -652,19 +652,19 @@ footer {
     margin-top:10px;
 }
 article {
-	font-size:16px;
-	line-height:1.66;
+	font-size:18px;
+	line-height:1.76;
     font-family:Lora;
 }
 .article-headline {
     font-family: Georgia,Times,"Times New Roman",serif;
-    font-size: 2.2rem;
-    font-weight: 400;
+    font-size: 2.6rem;
+    font-weight: 500;
     line-height: 1.15;
     color: #222222;
 }
 article p,article pre,article figure,article img,article blockquote,article iframed,article embed {
-	margin-bottom:1.5rem;
+	margin-bottom:1rem;
 }
 article blockquote {
 	padding-left:40px;
@@ -680,9 +680,9 @@ article:first-letter {
 	vertical-align:top;
 }
 article h1,article h2,article h3,article h4,article h5,article h6,article .h1,article .h2,article .h3,article .h4,article .h5,article .h6 {
-	margin-bottom:2rem;
-	margin-top:2rem;
-	font-weight:500;
+	margin-bottom:1.4rem;
+	margin-top:1.4rem;
+	font-weight:400;
 }
 .alertbar {
 	box-shadow:0 -3px 10px 0 rgba(0,0,0,.0785);
