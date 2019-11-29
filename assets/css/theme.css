@@ -672,14 +672,6 @@ article blockquote {
 	font-style:italic;
 	position:relative;
 }
-article blockquote:before {
-    color: #ccc;
-    content: open-quote;  
-    font-size: 4em;
-    line-height: .1em;
-    margin-right: .25em; 
-    vertical-align: -.4em;
-} 
 
 article:first-letter {
 	float:left;
