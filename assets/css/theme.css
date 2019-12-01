@@ -666,16 +666,38 @@ article {
 article p,article pre,article figure,article img,article blockquote,article iframed,article embed {
 	margin-bottom:1rem;
 }
+
+article blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+article blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+article blockquote p {
+  display: inline;
+}
+/*
 article blockquote {
 	padding-left:40px;
 	margin-left:0px;
 	font-style:italic;
 	position:relative;
-}
+}*/
 
 article:first-letter {
 	float:left;
-	font-size:5em;
+	font-size:2em;
 	line-height:1;
 	margin:0 .2em 0 0;
 	vertical-align:top;
