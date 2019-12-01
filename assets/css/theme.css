@@ -38,10 +38,11 @@ pre {
     background: #eee;
     padding: 5px;
     font-size:16px;
-  display: block;
-  color: #414549; }
+    display: block;
+    color: #818589; }
   pre code {
     font-size: inherit;
+	line-height:1.36;
     color: inherit;
     word-break: normal; }
 
