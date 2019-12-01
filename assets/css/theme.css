@@ -667,6 +667,7 @@ article p,article pre,article figure,article img,article blockquote,article ifra
 	margin-bottom:1rem;
 }
 
+/*
 article blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
@@ -675,7 +676,7 @@ article blockquote {
   quotes: "\201C""\201D""\2018""\2019";
 }
 
-/*article blockquote:before {
+article blockquote:before {
   color: #ccc;
   content: open-quote;
   font-size: 4em;
@@ -687,13 +688,15 @@ article blockquote {
 article blockquote p {
   display: inline;
 }
-/*
+
 article blockquote {
-	padding-left:40px;
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+	padding-left:20px;
 	margin-left:0px;
 	font-style:italic;
 	position:relative;
-}*/
+}
 
 article:first-letter {
 	float:left;
