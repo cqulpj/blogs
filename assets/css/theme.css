@@ -42,7 +42,7 @@ pre {
     color: #818589; }
   pre code {
     font-size: inherit;
-	line-height:1.36;
+	line-height:1;
     color: inherit;
     word-break: normal; }
 
@@ -673,7 +673,7 @@ footer {
 }
 article {
 	font-size:18px;
-	line-height:1.76;
+	line-height:1.50;
     font-family:Lora;
 }
 .article-headline {
