@@ -26,6 +26,14 @@ img {
 	margin-left:-50vw;
 	left:50%;
 }
+
+code {
+  font-size: 96%;
+  color: #ff0266;
+  word-break: break-word; }
+  a > code {
+    color: inherit; }
+
 a,a:hover {
 	transition:all .2s;
 	text-decoration:none;
