@@ -82,11 +82,11 @@ tags: featured
   上面使用的是163的源，目前国内常用的源主要有：  
 
   | 源名称 | 地址 |
-  | ------ | ---- |
+  | ------------ | ---- |
   | Docker中国区 | [https://registry.docker-cn.com](https://registry.docker-cn.com) |
   | 网易 | [http://hub-mirror.c.163.com](http://hub-mirror.c.163.com) |
   | 中科大 | [https://docker.mirrors.ustc.edu.cn](https://docker.mirrors.ustc.edu.cn) |
-  | 阿里云 | [http://<你的ID>.mirror.aliyuncs.com](http://<你的ID>.mirror.aliyuncs.com) |
+  | 阿里云 | [http://(你的ID).mirror.aliyuncs.com](http://(你的ID).mirror.aliyuncs.com) |
   
   其中阿里云需要先登录->创建我的容器镜像，然后得到专属的镜像服务地址
 
