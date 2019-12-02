@@ -748,12 +748,15 @@ h6, .h6 {
   width: 100%;
   margin-bottom: 1rem;
   border-collapse: collapse;
-  background-color: transparent; }
+  background-color: transparent;
+  border-top: 1px solid #202020;
+  border-left: 1px solid #202020;}
   .table th,
   .table td {
     padding: 0.75rem;
     vertical-align: top;
-    border-top: 1px solid #202020; }
+    border-bottom: 2px solid #202020;
+    border-right: 1px solid #202020; }
   .table thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #202020; }
