@@ -3,7 +3,7 @@ layout: post
 title:  "超过那辆三轮车"
 author: lpj
 categories: [ 杂记 ]
-image: assets/images/12.jpg
+image: assets/images/14.jpg
 ---
 
 一转眼就到了2015年，而且已经过了一半了，看看自己写上一篇东西的日期，才发觉时间又流失2年多了，两年肯定发生了很多事，但也说不出到底发生了什么，索性还是间歇写写记记吧

@@ -3,7 +3,7 @@ layout: post
 title:  "Python实现文件定期维护"
 author: lpj
 categories: [ Python, 技术 ]
-image: assets/images/7.jpg
+image: assets/images/2.jpg
 ---
 
 题目为，用程序实现如下功能：

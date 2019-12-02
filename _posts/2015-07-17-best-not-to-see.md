@@ -3,7 +3,7 @@ layout: post
 title:  "从此最好不相见"
 author: lpj
 categories: [ 随笔 ]
-image: assets/images/6.jpg
+image: assets/images/15.jpg
 ---
 
 这题目有些偏题的，原本想的题目是：留在记忆里最好，但觉得没吸引力，于是改成现在这个，吸引力有了，归纳涵盖性不足，废话到此，开始正文...
