@@ -749,17 +749,17 @@ table {
   margin-bottom: 1rem;
   border-collapse: collapse;
   background-color: transparent;}
-  .table th,
-  .table td {
+  table th,
+  table td {
     padding: 0.75rem;
     vertical-align: top;
     border-bottom: 1px solid #202020; }
-  .table thead th {
+  table thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #202020; }
-  .table tbody + tbody {
+  table tbody + tbody {
     border-top: 2px solid #202020; }
-  .table .table {
+  table .table {
     background-color: #fff; }
 
 article h1,article h2,article h3,article h4,article h5,article h6,article .h1,article .h2,article .h3,article .h4,article .h5,article .h6 {
