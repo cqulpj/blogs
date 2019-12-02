@@ -744,19 +744,16 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem; }
 
-.table {
+table {
   width: 100%;
   margin-bottom: 1rem;
   border-collapse: collapse;
-  background-color: transparent;
-  border-top: 1px solid #202020;
-  border-left: 1px solid #202020;}
+  background-color: transparent;}
   .table th,
   .table td {
     padding: 0.75rem;
     vertical-align: top;
-    border-bottom: 2px solid #202020;
-    border-right: 1px solid #202020; }
+    border-bottom: 1px solid #202020; }
   .table thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #202020; }
