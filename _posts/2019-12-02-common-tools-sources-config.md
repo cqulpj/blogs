@@ -79,7 +79,8 @@ tags: featured
   }
   ```
 
-  上面使用的是163的源，目前国内常用的源主要有：
+  上面使用的是163的源，目前国内常用的源主要有：  
+
   | 源名称 | 地址 |
   | ------ | ---- |
   | Docker中国区 | [https://registry.docker-cn.com](https://registry.docker-cn.com) |
