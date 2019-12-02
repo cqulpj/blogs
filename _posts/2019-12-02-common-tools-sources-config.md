@@ -83,7 +83,7 @@ tags: featured
 
   | 源名称 | 地址 |
   | ------------ | ---- |
-  | Docker中国区   | [https://registry.docker-cn.com](https://registry.docker-cn.com) |
+  | Docker中国   | [https://registry.docker-cn.com](https://registry.docker-cn.com) |
   | 网易 | [http://hub-mirror.c.163.com](http://hub-mirror.c.163.com) |
   | 中科大 | [https://docker.mirrors.ustc.edu.cn](https://docker.mirrors.ustc.edu.cn) |
   | 阿里云 | [http://(你的ID).mirror.aliyuncs.com](http://(你的ID).mirror.aliyuncs.com) |
