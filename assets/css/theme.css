@@ -744,6 +744,23 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem; }
 
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent; }
+  .table th,
+  .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #202020; }
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #202020; }
+  .table tbody + tbody {
+    border-top: 2px solid #202020; }
+  .table .table {
+    background-color: #fff; }
+
 article h1,article h2,article h3,article h4,article h5,article h6,article .h1,article .h2,article .h3,article .h4,article .h5,article .h6 {
 	margin-bottom:1.2rem;
 	margin-top:1.2rem;
