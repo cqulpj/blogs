@@ -134,6 +134,7 @@ tags: featured
 
     * 复制一份index.html文件，重命名为jinja_index.html，修改内容为以下：
       ```html
+      {% raw %}
       <!doctype html>
       <html>
           <head>
@@ -149,6 +150,7 @@ tags: featured
               </ul>
           </body>
       </html>
+      {% endraw %}
       ```
 
     * 运行hello.py文件，再用浏览器打开`localhost:8080`，就能看到变量已经在网页里显示了，这是最基础的Jinja2模板系统使用，详细的Jinja2教程见[Jinja2使用](https://www.cnblogs.com/yanzi-meng/p/8342798.html)
