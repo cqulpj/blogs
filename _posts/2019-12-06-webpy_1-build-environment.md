@@ -2,7 +2,7 @@
 layout: post
 title:  "web.py学习(一)、搭建web.py+Jinja2+bootstrap环境"
 author: lpj
-categories: [ web.py ]
+categories: [ web.py, 技术 ]
 image: assets/images/4.jpg
 tags: featured
 ---
