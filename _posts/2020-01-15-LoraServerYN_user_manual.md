@@ -278,6 +278,8 @@ location_topic"application/{{ .ApplicationID }}/node/{{ .DevEUI }}/location"
 ### 4.2 怎么直接查看中间件数据库中的数据
 
 一般来说不建议直接操作中间件数据库中的数据，如果确有需要，可以用postgresql数据库的客户端工具进行连接，LoraServerYN_Docker中间件的数据库中包含三个库，其作用、用户名、密码见下表：（**再次强调**:不建议对中间件的数据库进行操作）
+
+
 | 数据库名 | 存储内容 | 用户名 | 密码 |
 | -------- | -------- | ------ | ---- |
 | chirpstack_ns | 网络服务相关信息 | chirpstack_ns | chirpstack_ns |
