@@ -123,7 +123,7 @@ LoraServerYN_Docker中间件提供两种方式对应用、网关、设备等进�
 ### 2.1 登录
 
 * 启动中间件后，打开浏览器访问`服务器IP:8080`（本机启动可以直接用localhost:8080）可进入中间件的登录页面，输入用户名、密码（都是admin）登录
-  ![主页面](imgs/main.png)
+  ![主页面](/blogs/assets/images/main.png)
 
 * 登录后，页面左侧导航栏分为上下两个部分，上部为“网络服务器、服务配置、网关配置、设备配置”，对应网关、设备、应用的配置信息，下部为”应用、网关、节点、多播组“，对应应用、网关、节点和多播组的添加、修改、删除和设置等
 
@@ -153,11 +153,11 @@ LoraServerYN_Docker中间件提供两种方式对应用、网关、设备等进�
 #### 2.5.1 节点列表
 
 * **全部节点列表：**点击左边导航菜单中的”节点“可以打开全部节点列表页面（”全部“是指该中间件数据库中的全部节点，可能包含多个应用），能查看节点的最近在线时间、节点名称（支持中文显示）、节点描述、节点ID、所属应用ID等，如下图：
-  ![全部节点列表](imgs/nodes.png)
+  ![全部节点列表](/blogs/assets/images/nodes.png)
 
 
 * **应用节点列表：**在应用列表（见2.3）页面点击某应用名称进入其详细信息页面，可以查看该应用下的所有节点，如下图：
-  ![应用节点列表](imgs/devices.png)
+  ![应用节点列表](/blogs/assets/images/devices.png)
 
 #### 2.5.2 添加节点
 
@@ -174,17 +174,17 @@ LoraServerYN_Docker中间件提供两种方式对应用、网关、设备等进�
 节点数据支持实时查看和历史数据查看两种模式，分别如下：
 
 * **实时数据查看：**在节点列表页面点击某节点名进入该节点的详情页面，然后点击上部的“节点数据”标签，打开实时数据查看，保持该页面，有上行新数据到来时会以列表展示，点击某数据记录可以展开其Json形式，如下图：
-  ![节点实时数据](imgs/updata.png)
+  ![节点实时数据](/blogs/assets/images/updata.png)
 
 * **历史数据查看：**在节点列表页面点击某节点名进入该节点的详情页面，然后点击上部的“历史数据”标签，打开历史数据查看，选择起始时间和结束时间，页面会根据选择的时间提取该节点的历史数据并展示，也可以勾选右边的“自动刷新”复选框，页面会每30秒自动刷新一次数据，每次刷新都会将结束时间更新成当前时间，如下图：
-  ![节点历史数据](imgs/history.png)
+  ![节点历史数据](/blogs/assets/images/history.png)
 
 * **注意：**在数据量极大的情况下，建议不要将起始时间和结束时间设置得相隔太久，因为数据量太大会导致页面渲染很慢
 
 #### 2.5.4 下发数据到节点
 
 打开节点详情页面（在节点列表页面点击节点可打开详情页面），然后下拉到页面中间，可以看到“排队下行有效载荷”模块（如下图），通过以下步骤下发数据：
-  ![数据下发](imgs/downdata.png)
+  ![数据下发](/blogs/assets/images/downdata.png)
 
 * **端口：**输入端口号，范围是1-233，若节点要求指定端口号则以设备要求为准
 
@@ -203,10 +203,10 @@ LoraServerYN_Docker中间件提供两种方式对应用、网关、设备等进�
 ### 3.1 API
 
 打开网址：`xxx.xxx.xxx.xxx:8080/api`（其中xxx.xxx.xxx.xxx为中间件运行的计算机IP）可打开中间件API页面，如下图：
-  ![API](imgs/apis.png)  
+  ![API](/blogs/assets/images/apis.png)  
 
 该页面展示中间件所有的API列表，按内容分为应用服务、节点服务、网关服务、用户服务等几大类，点击某API可以展开显示该API的route、请求和响应格式，以及测试演示，如点击展开`DeviceService`中的`/api/devices/{dev_eui}`，详细信息如下：
-  ![API_demo](imgs/api_demo.png)
+  ![API_demo](/blogs/assets/images/api_demo.png)
 
 根据信息知道这是一个接受GET请求的API，参数为节点ID（dev_eui），得到的返回值为JSON格式的节点信息，**值得注意的是：**，在调用API前，需要先通过`api/internal/login`登录获取有效token（jwt），之后调用API时在header字段加入该jwt，否则中间件会认为API请求未授权
 
@@ -228,6 +228,7 @@ LoraServerYN_Docker中间件提供两种方式对应用、网关、设备等进�
 
 目前支持的Topic如下：
 ```bash
+{% raw %}
 uplink_topic="application/{{ .ApplicationID }}/node/{{ .DevEUI }}/rx"
 downlink_topic="application/{{ .ApplicationID }}/node/{{ .DevEUI }}/tx"
 join_topic="application/{{ .ApplicationID }}/node/{{ .DevEUI }}/join"
@@ -235,11 +236,12 @@ ack_topic="application/{{ .ApplicationID }}/node/{{ .DevEUI }}/ack"
 error_topic"application/{{ .ApplicationID }}/node/{{ .DevEUI }}/error"
 status_topic"application/{{ .ApplicationID }}/node/{{ .DevEUI }}/status"
 location_topic"application/{{ .ApplicationID }}/node/{{ .DevEUI }}/location"
+{% endraw %}
 ```
 
 使用最多前两个`uplink_topic`和`downlink_topic`分别是订阅节点上传消息和下发消息到节点，对topic的几点说明如下：
 
-* {{ .ApplicationID }}为节点所属的应用ID（注意是ID，不是名称），{{ .DevEUI }}为节点ID（也称节点EUI或DevEUI），比如要订阅应用ID为1下的节点ID为ffffff100000a6c6的节点上传消息，则订阅的Topic为：`application/1/node/ffffff100000a6c6`
+* {% raw %}{{ .ApplicationID }}{% endraw %}为节点所属的应用ID（注意是ID，不是名称），{% raw %}{{ .DevEUI }}{% endraw %}为节点ID（也称节点EUI或DevEUI），比如要订阅应用ID为1下的节点ID为ffffff100000a6c6的节点上传消息，则订阅的Topic为：`application/1/node/ffffff100000a6c6`
 
 * Topic支持`#`和`+`通配，其中`#`通配后面所有层，`+`通配一层，所以要订阅ID为1的应用下的所有节点的所有消息，可以将订阅Topic：`application/1/#`，要订阅该应用下的所有节点的上传消息，可以订阅`application/1/+/rx`
 
@@ -265,7 +267,7 @@ location_topic"application/{{ .ApplicationID }}/node/{{ .DevEUI }}/location"
 
 * 端口被占用
   中间件运行需要用到8080、1700、5432、1883等端口，若这些端口被别的程序占用，中间件会启动不成功并提示相应信息，这时要先用nestat命令查看端口占用情况，然后pkill掉对应的程序，再重启中间件即可，下图演示了使用netstat查看端口并pkill掉teamviewerd程序的过程：
-  ![netstat](imgs/netstat.png)
+  ![netstat](/blogs/assets/images/netstat.png)
 
 * 文件路径不存在
   这种情况很少出现，排除是认为故意删除相关文件的情况下，一般是文件属性的问题，比如可执行程序因为在windows下打开过导致没有了-x属性等，要根据错误信息找到对应的文件，然后用ls -l查看文件属性，然后用chmod命令修改，比如给文件a增加可执行权限的命令为：
