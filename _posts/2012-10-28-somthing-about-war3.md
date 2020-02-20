@@ -4,7 +4,6 @@ title:  "写点儿什么-关于游戏-关于war3"
 author: lpj
 categories: [ 随笔 ]
 image: assets/images/13.jpg
-tags: featured
 ---
 
 我接触一款游戏的时候，往往它已在暮年，04年接触的CS如是，10年开始接触的war3亦如是
