@@ -67,7 +67,7 @@ if (i>0) and (cp[i:i+2, j-1]==[B, B]).all():
 
 示意流程图如下：
 
-<img src="/blogs/assets/images/klotski_basic_flow.png" height="500" align=center>
+ <div align=center><img src="/blogs/assets/images/klotski_basic_flow.png" height="500"></div>
 
 
 ## 四、算法优化和细节
