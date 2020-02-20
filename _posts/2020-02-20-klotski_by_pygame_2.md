@@ -66,8 +66,9 @@ if (i>0) and (cp[i:i+2, j-1]==[B, B]).all():
 4. i=i+1，执行步骤2
 
 示意流程图如下：
-
- <div align=center><img src="/blogs/assets/images/klotski_basic_flow.png" height="500"></div>
+<center class="half">
+<img src="/blogs/assets/images/klotski_basic_flow.png" height="500" />
+</center>
 
 
 ## 四、算法优化和细节
