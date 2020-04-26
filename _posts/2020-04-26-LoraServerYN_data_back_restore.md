@@ -4,7 +4,7 @@ title:  "LoraServerYN_Docker中间件数据迁移说明"
 author: lpj
 categories: [ Lora, Docker ]
 image: assets/images/11.jpg
-tags: [sticky]
+tags: featured
 ---
 
 ## 一、数据迁移说明
